@@ -1,4 +1,4 @@
-#PureJSP
+# PureJSP
 #### PureJSP is a java web application and all files are written in JSP format.
 #### Just copy all the files to your webapps directory and run, then everything will be easy !
 #### Test on : JDK 1.6 + Tomcat 6 + MySql 5.1
