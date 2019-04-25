@@ -4,7 +4,7 @@
 #### Test on : JDK 1.6 + Tomcat 6 + MySql 5.1
 #### MIT License
 
-#### [中文](https://github.com/sinmax32/PureJSP/READ_CN.md "中文说明")
+#### [中文](README_CN.md "中文说明")
 
 Setup
 > 1. Copy the purejsp folder to the webapps directory.
