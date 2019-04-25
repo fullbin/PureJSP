@@ -1,0 +1,4 @@
+db_url=jdbc:mysql://localhost:3306/purejsp
+db_usr=root
+db_pwd=?
+db_driver=com.mysql.jdbc.Driver

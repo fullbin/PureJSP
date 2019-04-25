@@ -1,0 +1,63 @@
+﻿#project=PureJSP
+
+index_desc=<h3> \
+PureJSP is a java web application and all files are written in JSP format.<br> \
+Just copy all the files to your webapps directory and run, then everything will be easy !<br> \
+<br> \
+(Test on : JDK 1.6 + Tomcat 6 + MySql 5.1  ) <br> \
+MIT License<br><br> \
+</h3> \
+<pre> <br> \
+Setup <br> \
+1, Copy the purejsp folder to the webapps directory <br> \
+2, Run the database script "source {purejsp}/WEB-INF/config/en/db_init.txt" on your mysql server <br> \
+3, Edit the database configuration file "{purejsp}/WEB-INF/config/db_config.txt" <br> \
+4, Start Web Server , open "localhost:8080/purejsp/index.jsp" <br> \
+5, Chrome or Firefox browser is recommended for viewing  <br> \
+</pre> <br> \
+<br>
+
+
+login_title=System Login
+login_account=Account
+login_pwd=Password
+login_btn=Login ( Just click ! )
+
+login_btn_index=Index
+login_btn_oa=OA
+login_btn_cms=CMS
+
+info_login=Login please
+
+ps_options=Options : 
+ps_refresh=Refresh
+ps_new=New
+ps_logout=Logout
+ps_save=Save 
+ps_remove=Remove
+ps_saveasnew=Save As New
+
+f_pid=ParentNodeID
+f_create_time=Create Time
+f_update_time=Update Time
+f_node_name=Node Name
+f_class=Class
+f_tag=Tag
+f_type=Type
+f_flag=Flag
+f_url=Url
+f_json_str=Json
+f_ext_str=Extend
+f_int_val=IntValue
+f_float_val=FloatValue
+f_str_val=StrValue
+f_remark=Remark
+f_account=Account
+f_pwd=Password
+f_title=Title
+f_content=Content
+f_sort=Sort
+f_valid=Valid
+
+
+

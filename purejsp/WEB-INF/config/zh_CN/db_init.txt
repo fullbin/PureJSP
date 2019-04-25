@@ -1,0 +1,67 @@
+﻿CREATE DATABASE IF NOT EXISTS purejsp DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+use purejsp;
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for purejsp
+-- ----------------------------
+DROP TABLE IF EXISTS `purejsp`;
+CREATE TABLE `purejsp` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `node_name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `class` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `flag` int(11) DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `json_str` text COLLATE utf8_unicode_ci,
+  `ext_str` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `int_val` int(11) DEFAULT NULL,
+  `float_val` float DEFAULT NULL,
+  `str_val` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `remark` text COLLATE utf8_unicode_ci,
+  `account` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `pwd` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `content` text COLLATE utf8_unicode_ci,
+  `sort` bigint(20) DEFAULT NULL,
+  `valid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of purejsp
+-- ----------------------------
+INSERT INTO `purejsp` VALUES ('1', '0', '2019-02-01 00:00:00', '2019-03-12 00:00:00', 'system', '', '', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('2', '1', '2019-02-01 00:00:00', '2019-02-03 00:00:00', 'user', '', '', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('3', '2', '2019-02-01 00:00:00', '2019-02-03 00:00:00', 'AdminGroup', '', '', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('4', '7', '2019-02-01 00:00:00', '2019-02-03 00:00:00', '首页', 'oa_menu', 'lv2', '', '0', '../index.jsp', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('5', '0', '0119-03-15 00:00:00', '0119-03-15 00:00:00', 'OA', '', '', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('6', '5', '2019-02-01 00:00:00', '2019-02-03 00:00:00', 'menu', '', '', '', '0', '', '', '', '0', '0', '', '', '3', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('7', '6', '2019-02-01 00:00:00', '2019-02-03 00:00:00', '系统管理', 'oa_menu', 'lv1', '', '0', '', '', '', '0', '0', '', '', '3', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('8', '7', '2019-02-01 00:00:00', '2019-02-03 00:00:00', '部门管理', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '4', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('9', '3', '2019-02-01 00:00:00', '2019-02-03 00:00:00', 'admin', '', '', '', '0', '', '', '', '0', '0', '', '', '0', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('10', '7', '2019-02-01 00:00:00', '2019-02-03 00:00:00', '权限管理', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '3', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('11', '6', '2019-02-01 00:00:00', '2019-02-03 00:00:00', '协同办公', 'oa_menu', 'lv1', '', '0', '', '', '', '0', '0', '', '', '3', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('12', '3', '2019-02-01 00:00:00', '2019-02-03 00:00:00', 'system_backup', 'node', 'target', '', '0', '', '', '', '0', '0', '', '', '0', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('13', '0', '2019-02-01 00:00:00', '2019-03-12 00:00:00', 'CMS', '', '', '', '0', '', '', '', '0', '0', '', '', '1', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('14', '13', '2019-02-01 00:00:00', '2019-03-12 00:00:00', '首页', 'cms', 'lv1', '', '0', '', '', '', '0', '0', '', '', '1', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('15', '13', '2019-02-01 00:00:00', '2019-03-12 00:00:00', '产品介绍', 'cms', 'lv1', '', '0', '', '', '', '0', '0', '', '', '1', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('16', '7', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '用户管理', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('17', '11', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '流程管理', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('18', '17', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '流程设计', 'oa_menu', 'lv3', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('19', '17', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '流程跟踪', 'oa_menu', 'lv3', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('20', '11', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '我的待办', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('21', '11', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '我的待阅', 'oa_menu', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('22', '6', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '网站', 'oa_menu', 'lv1', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('23', '22', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '我的网站', 'oa_menu', 'lv2', '', '0', '../cms/cms.jsp', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('24', '15', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '电视', 'cms', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('25', '15', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '空调', 'cms', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('26', '15', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '洗衣机', 'cms', 'lv2', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('27', '13', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '企业文化', 'cms', 'lv1', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');
+INSERT INTO `purejsp` VALUES ('28', '13', '2019-03-19 00:00:00', '2019-03-19 00:00:00', '联系我们', 'cms', 'lv1', '', '0', '', '', '', '0', '0', '', '', '', '', '', '', '0', '0');

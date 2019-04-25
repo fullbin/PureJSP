@@ -1,0 +1,60 @@
+﻿#project=PureJSP
+
+index_desc=<h3> \
+PureJSP是一个轻量级的Java网页应用程序。全部代码使用JSP格式文件开发。只需要复制purejsp文件夹到服务器webapps目录下运行即可看到效果，所有东西都是那么简单。除了mysql.jar没有其它jar，更不需要maven。<br> \
+<br> \
+(开发环境 : JDK 1.6 + Tomcat 6 + MySql 5.1  ) <br> \
+MIT License<br><br> \
+</h3> \
+<pre> <br> \
+Setup <br> \
+1, 复制purejsp文件夹到服务器的webapps目录 <br> \
+2, MySQL服务器上运行数据库初始化脚本“{purejsp}/web-inf/config/zh_CN/db_init.txt” <br> \
+3, 编辑数据库配置文件“{purejsp}/web-inf/config/db_config.txt” <br> \
+4, 启动web服务器，打开浏览器定位“localhost:8080/purejsp/index.jsp” <br> \
+5, 建议使用Chrome或Firefox浏览器进行查看。 <br> \
+</pre> <br> \
+<br>
+
+
+login_title=系统登陆
+login_account=帐号
+login_pwd=密码
+login_btn=登陆 ( 直接点击 )
+
+login_btn_index=首页
+login_btn_oa=OA
+login_btn_cms=CMS
+
+
+info_login=请登陆系统
+
+ps_options=操作： 
+ps_refresh=刷新
+ps_new=新增
+ps_logout=登出
+ps_save=保存
+ps_remove=移称
+ps_saveasnew=保存为新记录
+
+f_pid=父节点ID
+f_create_time=创建时间
+f_update_time=更新时间
+f_node_name=节点名称
+f_class=类别
+f_tag=标签
+f_type=类型
+f_flag=标识
+f_url=Url
+f_json_str=Json
+f_ext_str=Extend
+f_int_val=IntValue
+f_float_val=FloatValue
+f_str_val=StrValue
+f_remark=备注
+f_account=帐号
+f_pwd=密码
+f_title=标题
+f_content=内容
+f_sort=排序
+f_valid=有效
