@@ -55,7 +55,7 @@
 	String hint = null;
 	String spId = "0";
 		
-	if( "save".equals(action) ) {  //判定为新增或修改
+	if( "save".equals(action) ) {  
 		int id = 0;
 		try {
 			id =  Integer.valueOf(_ID.trim());
