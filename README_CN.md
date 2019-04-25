@@ -9,11 +9,7 @@
 配置
 
 > 1、复制purejsp文件夹到服务器的webapps目录。
-
 > 2、MySQL服务器上运行数据库初始化脚本“source {purejsp}/web-inf/config/zh_CN/db_init.txt”（控制台界面执行）。
-
 > 3、编辑数据库配置文件“{purejsp}/web-inf/config/db_config.txt”。
-
 > 4、启动web服务器，打开浏览器定位“localhost:8080/purejsp/index.jsp”。
-
 > 5、建议使用Chrome或Firefox浏览器进行查看。
